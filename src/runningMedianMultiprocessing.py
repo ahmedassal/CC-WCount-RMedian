@@ -30,7 +30,7 @@ def runningMedianManager():
 
 
 
-runningMedianManager()
+# runningMedianManager()
 
 
 

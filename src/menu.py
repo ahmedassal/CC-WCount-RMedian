@@ -6,6 +6,7 @@ __author__ = 'Ahmed Assal'
 import curses
 import wordcountSequential as wcSeq
 import wordcountMultiprocessing as wcMulti
+import runningMedianMultiprocessing as medMulti
 
 
 
@@ -18,9 +19,10 @@ screen.keypad(True)
 screen.addstr(0,0,"Current Mode: Command mode\n\n", curses.A_REVERSE)
 screen.addstr("\tInsight Data Engineering Coding Challenge\n\n")
 screen.addstr("\n\n\n")
-screen.addstr("\t1-Run wordcount sequentially.\n")
-screen.addstr("\t2-Run wordcount using Multiprocessing package.\n")
-screen.addstr("\t3-Run wordcount using Multiprocessing package.\n")
+screen.addstr("\t1-Compute wordcount sequentially.\n")
+screen.addstr("\t2-Compute wordcount using Multiprocessing package.\n")
+screen.addstr("\t3-Compute running median sequentially.\n")
+screen.addstr("\t4-Compute running median using Multiprocessing package.\n")
 screen.addstr("\n\n\n\n\n\n\n\n\n\n\n\n")
 screen.addstr("\tPlease choose and option\n\n")
 while True:
@@ -36,6 +38,12 @@ while True:
     elif event == ord("2"):
         screen.addstr("\t\tInsight Data Engineering Coding Challenge\n\n")
         wcMulti.wordCountManager()
+    elif event == ord("3"):
+        screen.addstr("\t\tInsight Data Engineering Coding Challenge\n\n")
+        medSeq.runningMedianManager()
+    elif event == ord("4"):
+        screen.addstr("\t\tInsight Data Engineering Coding Challenge\n\n")
+        medMulti.runningMedianManager()
 curses.endwin()
 
 def main(stdscr):
