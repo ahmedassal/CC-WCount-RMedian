@@ -5,10 +5,10 @@ from combiners import SimpleCombiner
 from writers import Writer
 
 
-inputPath = "../wc_input/"
-outputPath = "../wc_output/"
-src_path = "../src/"
-write_in_html =True
+inputPath = "wc_input/"
+outputPath = "wc_output/"
+src_path = "src/"
+write_in_html =False
 textPool = []
 results=[]
 

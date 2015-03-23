@@ -4,9 +4,9 @@ from scaled import dataLoaderV2, schedulerV2, schedulerV3, dataLoaderV3
 from combiners import SimpleCombiner
 from writers import Writer
 
-inputPath = "../wc_input/"
-outputPath = "../wc_output/"
-src_path = "../src/"
+inputPath = "wc_input/"
+outputPath = "wc_output/"
+src_path = "src/"
 write_in_html =False
 textPool = []
 results=[]
