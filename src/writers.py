@@ -2,13 +2,19 @@ __author__ = 'Ahmed Assal'
 
 import datetime
 
-def Writer(output_path, sortedWords, wordcount, write_in_html = False, partial=False, file_no=0):
+def wcWriter(output_path, sortedWords, wordcount, write_in_html = False, partial=False, file_no=0):
     if write_in_html == True:
-        WriteHTML(output_path, sortedWords, wordcount, partial, file_no)
+        wcWriteHTML(output_path, sortedWords, wordcount, partial, file_no)
     else:
-        WriteTXT(output_path, sortedWords, wordcount, partial, file_no)
+        wcWriteTXT(output_path, sortedWords, wordcount, partial, file_no)
 
-def WriteTXT(output_path, sortedWords, wordcount, partial=False, file_no=0):
+def medWriter(output_path, medians, write_in_html = False, partial=False, file_no=0):
+    if write_in_html == True:
+        medWriteHTML(output_path,medians, partial, file_no)
+    else:
+        medWriteTXT(output_path,medians, partial, file_no)
+
+def wcWriteTXT(output_path, sortedWords, wordcount, partial=False, file_no=0):
     if (not partial):
         wc_output_file = open(output_path + "wc_result.txt", "w")
         wc_output_file.write(str("Created on " + str(datetime.datetime.today())+ "\n"))
@@ -26,7 +32,7 @@ def WriteTXT(output_path, sortedWords, wordcount, partial=False, file_no=0):
     median_output_file.write(str("Created on " + str(datetime.datetime.today())+ "\n"))
     median_output_file.close()
 
-def WriteHTML(output_path, sortedWords, wordcount, partial=False, file_no=0):
+def wcWriteHTML(output_path, sortedWords, wordcount, partial=False, file_no=0):
     if (not partial):
         wc_output_file = open(output_path + "wc_result.html", "w")
         wc_output_file.write("<html><head><title>wordcountSequential.py output</title></head><body><table>")
@@ -37,4 +43,21 @@ def WriteHTML(output_path, sortedWords, wordcount, partial=False, file_no=0):
 
     median_output_file = open(output_path +"med_result.html", "w")
     median_output_file.write("<html><head><title>running median output</title></head><body><table>")
+    median_output_file.close()
+
+
+def medWriteTXT(output_path, medians, partial=False, file_no=0):
+    median_output_file = open(output_path +"med_result.txt", "w")
+    median_output_file.write(str("Created on " + str(datetime.datetime.today())+ "\n"))
+    median_output_file.write("Number of lines: " +  str(len(medians))+ "\n")
+    for median in medians:
+        median_output_file.write(str(median) +"\n")
+    median_output_file.close()
+
+def medWriteHTML(output_path, medians, partial=False, file_no=0):
+    median_output_file = open(output_path +"med_result.html", "w")
+    median_output_file.write("<html><head><title>running median output</title></head><body><table>")
+    for median in medians:
+        median_output_file.write("<tr><td>%s</td></tr>" % median)
+    median_output_file.write("</table></body></html>")
     median_output_file.close()

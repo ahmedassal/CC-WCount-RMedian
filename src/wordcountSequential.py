@@ -1,5 +1,5 @@
 from combiners import SimpleCombiner
-from writers import Writer
+from writers import wcWriter
 
 __author__ = 'Ahmed Assal'
 
@@ -21,7 +21,7 @@ def wordCountManager():
     results = [TokenizerV3(x, files, inputPath) for x in range(len(textPool))]
     finalResults = SimpleCombiner(results)
     sortedByWord = sorted(finalResults, key=lambda k: k , reverse=False)
-    Writer(outputPath, sortedByWord, finalResults, write_in_html= write_in_html, partial=False)
+    wcWriter(outputPath, sortedByWord, finalResults, write_in_html= write_in_html, partial=False)
     print("Sequentially Generated "+ str(len(finalResults)) + " tokens from " + str(len(results)) + " files")
 
 

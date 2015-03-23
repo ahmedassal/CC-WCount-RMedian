@@ -3,8 +3,8 @@
 __author__ = 'Ahmed Assal'
 
 from scaled import dataLoaderV2, schedulerV2, schedulerV3, dataLoaderV3
-from combiners import SimpleCombiner
-from writers import Writer
+from combiners import SimpleCombiner, MediansCombiner
+from writers import medWriter
 
 import time
 
@@ -23,11 +23,11 @@ def runningMedianManager():
     results = schedulerV3(textPool)
     end =  time.clock()
     print("(Manager)Time elapsed: ", (end-start) , "Using Multiprocessing, Generated ", len(results), " medians from ", len(results), " files")
-    # print(results)
-    # finalResults = SimpleCombiner(results)
-    # sortedByWord = sorted(finalResults, key=lambda k: k , reverse=False)
-    # Writer(outputPath, sortedByWord, finalResults, write_in_html= write_in_html, partial=False)
-    # print("Generated "+ str(len(finalResults)) + " tokens from " + str(len(results)) + " files")
+    finalResults = MediansCombiner(results)
+    # print(finalResults)
+    medWriter(outputPath, finalResults, write_in_html= write_in_html, partial=False)
+    print("(Manager)Time elapsed: ", (end-start) , "Using Multiprocessing, Generated ", len(finalResults), " medians from ", len(results), " files")
+
 
 
 runningMedianManager()

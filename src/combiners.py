@@ -10,3 +10,8 @@ def SimpleCombiner(intermediates):
         result[k] += v
     return result
 
+def MediansCombiner(intermediates):
+    result = []
+    for v in intermediates:
+        result+=v
+    return result
