@@ -29,7 +29,7 @@ def WriteTXT(output_path, sortedWords, wordcount, partial=False, file_no=0):
 def WriteHTML(output_path, sortedWords, wordcount, partial=False, file_no=0):
     if (not partial):
         wc_output_file = open(output_path + "wc_result.html", "w")
-        wc_output_file.write("<html><head><title>wordcountSerial.py output</title></head><body><table>")
+        wc_output_file.write("<html><head><title>wordcountSequential.py output</title></head><body><table>")
     for word in sortedWords:
         wc_output_file.write("<tr><td>%s</td><td>%s</td></tr>" % (word,wordcount[word]))
     wc_output_file.write("</table></body></html>")

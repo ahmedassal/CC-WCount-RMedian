@@ -1,10 +1,11 @@
 __author__ = 'Ahmed Assal'
 
-import sys, os
+import sys
+import os
 import multiprocessing as mp
+
 import tokenizers as toks
 from runningMedianCalculator import MedianCalculator
-
 
 
 def schedulerV2(path, *files):
@@ -21,7 +22,7 @@ def schedulerV3(text):
         pool = mp.Pool(processes = textPoolLength)
         results = [pool.apply_async(MedianCalculator, args=(x, text[x])) for x in range(textPoolLength)]
         output = [p.get() for p in results]
-        print(output)
+        # print(output)
         pool.close()
         pool.join()
         return output
