@@ -1,0 +1,11 @@
+File number: 0 2015-03-22 18:18:46.311286
+9
+alab	1
+am	2
+hyphen	2
+i	1
+im	2
+mr	1
+noway	2
+there	2
+youre	1
