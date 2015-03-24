@@ -25,7 +25,7 @@ def runningMedianManager(): #(inputPath, outputPath, src_path, write_in_html=Fal
 
     finalResults = MediansCombiner(results)
     # print(finalResults)
-    medWriter(outputPath, finalResults, write_in_html= write_in_html, partial=False)
+    medWriter(outputPath, finalResults, "mp_", write_in_html= write_in_html)
     end =  time.clock()
     print("(Manager)Time elapsed: ", (end-start) , ". Using Multiprocessing, generated ", len(finalResults), " medians from ", len(results), " files")
 

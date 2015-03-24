@@ -15,22 +15,27 @@ function pause(){
 
 cd src/
 echo -en "\ec"
-
-
-#PYHONPATH="${PYTHONPATH}:/home/administrator/PycharmProjects/CC-WCount-RMedian"
-#setenv PYHONPATH="${PYTHONPATH}:/home/administrator/PycharmProjects/CC-WCount-RMedian"
-#PYHONPATH="${PYTHONPATH}:/home/administrator/PycharmProjects/CC-WCount-RMedian/src"
-#setenv PYHONPATH="${PYTHONPATH}:/home/administrator/PycharmProjects/CC-WCount-RMedian/src"
 echo -e "First problem - wordcount.\n"
 pause "Let's try the sequential implementation...[Press Enter]"
+echo -e "\n"
 python3.4 wordcountSequential.py
+echo -e "\n"
 pause "Then the multiprocessing implementation...[Press Enter]"
+echo -e "\n"
 python3.4 wordcountMultiprocessing.py
+echo -e "\n"
 pause "That's an improvement of a factor of 2.74 in the prefromance...[Press Enter]"
-echo -e "Second problem - the running median\n"
+echo -e "\nSecond problem - the running median\n"
 pause "Let's try the sequential implementation...[Press Enter]"
+echo -e "\n"
 python3.4 runningMedianSequential.py
+echo -e "\n"
 pause "Then the multiprocessing implementation...[Press Enter]"
+echo -e "\n"
 python3.4 runningMedianMultiprocessing.py
+echo -e "\n"
 pause "That's an improvement of a factor of  in the prefromance."
-#python src/menu.py
+
+cd ..
+cp wc_output/seq_wc_result.txt wc_output/wc_result.txt
+cp wc_output/seq_med_result.txt wc_output/med_result.txt

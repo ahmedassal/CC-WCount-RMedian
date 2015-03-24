@@ -22,7 +22,7 @@ def wordCountManager(): #(inputPath, outputPath, src_path, write_in_html=False):
     results = schedulerV2(inputPath, *files)
     finalResults = SimpleCombiner(results)
     sortedByWord = sorted(finalResults, key=lambda k: k , reverse=False)
-    wcWriter(outputPath, sortedByWord, finalResults, write_in_html= write_in_html, partial=False)
+    wcWriter(outputPath, sortedByWord, finalResults, "mp_", write_in_html= write_in_html)
     end =  time.clock()
     print("(Manager)Time elapsed: " + str(end-start) + ". Using Multiprocessing, generated "+ str(len(finalResults)) + " tokens from " + str(len(results)) + " files")
 

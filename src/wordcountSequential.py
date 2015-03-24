@@ -24,7 +24,7 @@ def wordCountManager(): #(inputPath, outputPath, src_path, write_in_html=False):
     results = [TokenizerV3(x, files, inputPath) for x in range(len(textPool))]
     finalResults = SimpleCombiner(results)
     sortedByWord = sorted(finalResults, key=lambda k: k , reverse=False)
-    wcWriter(outputPath, sortedByWord, finalResults, write_in_html= write_in_html, partial=False)
+    wcWriter(outputPath, sortedByWord, finalResults, "seq_", write_in_html= write_in_html)
     end =  time.clock()
     print("(Manager)Time elapsed: " + str((end-start)) + ". Sequentially generated " + str(len(finalResults)) + " tokens from " + str(len(results)) + " files")
 
