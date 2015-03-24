@@ -1,6 +1,6 @@
-Created on 2015-03-23 09:09:01.975573
+Created on 2015-03-24 05:36:40.022943
 Number of words: 22944
-a	30170
+a	30171
 aa	2
 aamen	4
 aarons	2
@@ -350,7 +350,7 @@ advantageously	8
 advantages	30
 adventure	50
 adventurer	6
-adventures	58
+adventures	62
 adventuresbeginning	2
 adventuresyou	2
 adventurous	8
@@ -576,8 +576,8 @@ algerian	4
 algiers	10
 ali	340
 alicante	10
-alice	772
-alices	34
+alice	774
+alices	38
 alienate	4
 alienated	4
 alienation	4
@@ -644,7 +644,7 @@ allying	2
 almighty	14
 almightys	2
 almo	2
-almost	636
+almost	637
 alms	4
 almsgiver	2
 alo	2
@@ -776,7 +776,7 @@ ancient	48
 ancients	6
 ancientthough	2
 ancona	2
-and	46898
+and	46901
 andalusian	2
 andalusians	2
 andand	2
@@ -901,11 +901,11 @@ any	2434
 anybody	210
 anybodys	8
 anyhow	8
-anyone	98
+anyone	99
 anything	678
 anyway	98
 anyways	8
-anywhere	44
+anywhere	45
 anywheres	12
 anywhers	2
 apace	2
@@ -1319,7 +1319,7 @@ astudying	2
 aswelling	2
 aswinging	2
 asylum	16
-at	9388
+at	9390
 atalkin	2
 ate	32
 atearing	2
@@ -1442,7 +1442,7 @@ austrians	2
 auteuil	98
 auteuilthis	2
 authenticity	6
-author	22
+author	23
 authorise	2
 authorised	4
 authorising	2
@@ -1508,7 +1508,7 @@ awanted	2
 awarded	8
 aware	140
 awatching	2
-away	1106
+away	1107
 aways	2
 awayyou	8
 awe	14
@@ -1643,7 +1643,7 @@ banging	2
 bangs	2
 banish	6
 banished	10
-bank	114
+bank	115
 bankbills	2
 banker	152
 bankers	68
@@ -1879,7 +1879,7 @@ begged	80
 begging	14
 begginga	2
 begin	152
-beginning	154
+beginning	155
 beginningfrom	2
 begins	48
 beginsbut	2
@@ -2304,7 +2304,7 @@ bonnet	18
 bony	12
 boobies	2
 boohooing	2
-book	148
+book	150
 bookmark	2
 bookroom	2
 books	76
@@ -2736,7 +2736,7 @@ busted	36
 busting	2
 bustle	6
 busy	22
-but	10388
+but	10389
 butand	2
 butcher	2
 butcherknife	2
@@ -2763,7 +2763,7 @@ buys	4
 buzz	8
 buzzard	2
 buzzing	6
-by	6608
+by	6610
 bye	8
 byi	2
 bymeby	4
@@ -3032,7 +3032,7 @@ carriagewindow	2
 carried	198
 carrier	2
 carries	20
-carroll	8
+carroll	11
 carrots	2
 carrousel	2
 carry	112
@@ -3262,7 +3262,7 @@ chapelleenserval	6
 chaperon	4
 chaplain	4
 chaps	4
-chapter	558
+chapter	559
 character	200
 characterise	2
 characteristic	14
@@ -4349,7 +4349,7 @@ conversant	8
 conversation	352
 conversationa	2
 conversationpermit	2
-conversations	12
+conversations	14
 converse	32
 conversed	16
 converses	2
@@ -4397,7 +4397,7 @@ coping	4
 copper	10
 coppicewood	2
 copse	8
-copy	100
+copy	101
 copying	34
 copyright	112
 coqheron	10
@@ -4478,7 +4478,7 @@ coselli	6
 cosmetics	2
 cosmopolite	2
 coss	2
-cost	100
+cost	101
 costing	2
 costly	4
 costs	22
@@ -4983,7 +4983,7 @@ dashing	6
 dasnt	26
 dat	142
 data	8
-date	52
+date	54
 dated	14
 dates	12
 dats	40
@@ -5086,7 +5086,7 @@ deceivedhe	2
 deceiver	2
 deceives	6
 deceiving	8
-december	4
+december	5
 decency	4
 decent	14
 decently	6
@@ -5985,7 +5985,7 @@ divulge	2
 divulged	4
 divulging	2
 dizzy	2
-do	5190
+do	5191
 doan	70
 docile	2
 docility	2
@@ -6113,7 +6113,7 @@ dovedale	2
 doves	2
 dowager	2
 dowling	12
-down	1876
+down	1877
 downcast	2
 downfall	6
 downhaul	2
@@ -6403,7 +6403,7 @@ eavesdropper	2
 ebb	2
 ebbing	2
 ebony	4
-ebook	80
+ebook	84
 ebooks	56
 ebullition	6
 ecarte	2
@@ -6435,7 +6435,7 @@ edging	2
 edifice	6
 edified	2
 edifying	2
-edition	12
+edition	13
 editions	38
 editor	10
 edmond	576
@@ -6736,7 +6736,7 @@ enghien	2
 engineer	2
 engines	4
 england	66
-english	100
+english	101
 englisheminent	2
 englishman	150
 englishmens	2
@@ -7977,7 +7977,7 @@ footsteps	54
 footstepsthey	2
 footstool	4
 foppish	4
-for	10954
+for	10955
 forbade	8
 forbear	4
 forbearance	16
@@ -8324,7 +8324,7 @@ fst	2
 fugiens	2
 fugitive	12
 fugitives	6
-fulcrum	2
+fulcrum	3
 fulfil	38
 fulfilled	18
 fulfilling	14
@@ -8583,7 +8583,7 @@ gesticulate	2
 gesticulating	2
 gesture	56
 gestures	8
-get	1062
+get	1063
 gethered	4
 getherin	2
 gets	40
@@ -8632,7 +8632,7 @@ git	100
 gitout	2
 gits	4
 gittn	2
-give	1228
+give	1229
 given	444
 gives	84
 giveth	2
@@ -9107,8 +9107,8 @@ gush	4
 gushed	2
 gust	6
 gusts	4
-gutenberg	284
-gutenbergs	8
+gutenberg	287
+gutenbergs	9
 gutenbergtm	448
 gutenbergtms	8
 gutter	2
@@ -9141,7 +9141,7 @@ hackney	6
 hackneycoach	8
 hackneycoachmen	2
 hackneyed	2
-had	10792
+had	10794
 hadn	6
 hadnot	2
 hadnt	168
@@ -9411,7 +9411,7 @@ haven	2
 havent	34
 haverepent	2
 havin	4
-having	872
+having	873
 havre	4
 hawhawed	2
 hawking	4
@@ -9566,7 +9566,7 @@ henry	14
 hep	4
 heppin	2
 heptarchies	2
-her	9570
+her	9572
 hera	2
 herald	2
 heraldic	4
@@ -10044,7 +10044,7 @@ hypocritically	2
 hypothesis	2
 hysterical	2
 hysterics	4
-i	28000
+i	28001
 iat	2
 icarus	2
 ice	14
@@ -10322,7 +10322,7 @@ imputations	2
 impute	4
 imputed	10
 imputing	4
-in	20788
+in	20793
 inability	6
 inaccessible	2
 inaccuracies	2
@@ -10366,7 +10366,7 @@ inclined	52
 inclines	2
 inclining	2
 include	14
-included	38
+included	39
 includes	8
 including	80
 incog	4
@@ -10857,7 +10857,7 @@ intimating	2
 intimation	8
 intimidate	2
 intimidated	2
-into	2044
+into	2045
 intolerable	8
 intonation	8
 intoxicated	14
@@ -10967,7 +10967,7 @@ irritate	2
 irritated	18
 irritation	6
 irs	8
-is	11068
+is	11070
 isabella	2
 isabring	2
 ise	2
@@ -10991,7 +10991,7 @@ issue	10
 issued	20
 issuing	8
 iswhere	2
-it	18012
+it	18017
 ita	2
 italian	150
 italians	14
@@ -11236,7 +11236,7 @@ jumped	76
 jumping	16
 jumps	16
 junction	2
-june	22
+june	23
 junior	2
 junketings	2
 juno	2
@@ -11494,7 +11494,7 @@ landscapes	6
 lane	28
 lanes	4
 langlais	2
-language	98
+language	99
 languages	18
 langudoc	2
 languedoc	8
@@ -11528,7 +11528,7 @@ lash	4
 lashes	8
 lashing	2
 lasso	8
-last	1130
+last	1131
 lastborn	2
 lasted	50
 lasting	6
@@ -11747,7 +11747,7 @@ lever	16
 levi	10
 leviticus	2
 levy	2
-lewis	14
+lewis	17
 liabilities	4
 liability	24
 liable	16
@@ -11771,7 +11771,7 @@ libertywhich	2
 library	88
 librarydoor	2
 licence	4
-license	128
+license	129
 licensed	8
 licentiousness	2
 lichen	2
@@ -12377,7 +12377,7 @@ marble	36
 marblelike	2
 marbles	2
 marcellus	2
-march	106
+march	107
 marched	6
 marchesa	6
 marchese	2
@@ -12539,7 +12539,7 @@ maximilianthey	2
 maximiliantoo	2
 maxims	2
 maximum	8
-may	1598
+may	1599
 maybe	140
 mayflower	2
 maynt	12
@@ -12798,7 +12798,7 @@ milk	8
 milking	2
 milkjug	2
 mill	12
-millennium	2
+millennium	3
 miller	2
 millers	2
 milligramme	4
@@ -13628,7 +13628,7 @@ ninetyeight	2
 ninth	2
 nip	2
 nitric	2
-no	5604
+no	5607
 noah	2
 noailles	4
 nobilities	2
@@ -13720,7 +13720,7 @@ notebook	4
 notecase	2
 noted	10
 notes	38
-nothing	1566
+nothing	1567
 nothingabsolutely	2
 nothingafter	2
 nothingat	2
@@ -13917,7 +13917,7 @@ odrys	2
 oedipus	2
 oer	4
 oerwhelm	2
-of	37934
+of	37940
 ofam	2
 ofas	2
 off	1216
@@ -13988,8 +13988,8 @@ omitted	8
 omnibus	2
 omnibuses	2
 omphale	2
-on	9158
-once	716
+on	9159
+once	717
 onceand	2
 oncomfortable	2
 oncommon	2
@@ -14023,7 +14023,7 @@ onion	2
 onions	12
 onkores	2
 onless	2
-online	32
+online	33
 only	2390
 onlyfor	2
 onlyif	2
@@ -14082,7 +14082,7 @@ oppression	4
 oppressively	2
 oppressors	2
 opulence	2
-or	4634
+or	4639
 oral	2
 orally	2
 oran	2
@@ -14111,7 +14111,7 @@ orders	208
 ordinarily	14
 ordinary	52
 ordination	2
-org	92
+org	93
 organ	4
 organan	2
 organization	2
@@ -14680,7 +14680,7 @@ pedestrians	4
 peeled	4
 peeling	2
 peep	8
-peeped	20
+peeped	21
 peeping	2
 peeps	2
 peer	24
@@ -14986,7 +14986,7 @@ picpus	2
 picture	92
 pictured	8
 picturegallery	2
-pictures	52
+pictures	54
 picturesque	38
 pie	50
 piece	204
@@ -15417,7 +15417,7 @@ posthorses	16
 posthumous	2
 postilion	24
 postilions	8
-posting	8
+posting	9
 postinghouse	4
 postingmaster	2
 postman	2
@@ -15811,7 +15811,7 @@ progressive	2
 progressively	2
 prohibited	6
 prohibition	8
-project	742
+project	745
 projected	30
 projecting	14
 projection	4
@@ -16178,7 +16178,7 @@ quotes	2
 quoting	2
 quum	2
 rabbit	106
-rabbithole	6
+rabbithole	7
 rabbitholeand	2
 rabbits	18
 rabbitsfor	2
@@ -16342,7 +16342,7 @@ readers	36
 readily	68
 readilyeasilyto	2
 readiness	32
-reading	120
+reading	121
 reads	6
 ready	348
 readymade	2
@@ -16670,7 +16670,7 @@ relaxes	2
 relaxing	4
 relay	2
 relays	2
-release	26
+release	27
 released	12
 releasing	4
 relentless	2
@@ -16982,7 +16982,7 @@ restrains	2
 restraint	18
 restraints	4
 restricted	2
-restrictions	16
+restrictions	17
 rests	4
 restthere	2
 result	82
@@ -17030,7 +17030,7 @@ returning	76
 returns	22
 returnthey	2
 reunited	4
-reuse	16
+reuse	17
 rev	4
 reveal	38
 revealed	52
@@ -18167,7 +18167,7 @@ shavins	2
 shawl	4
 shawls	2
 shd	4
-she	8158
+she	8159
 sheath	8
 sheathe	4
 shed	114
@@ -18499,7 +18499,7 @@ sirthis	2
 sirwhat	2
 sirwhy	4
 sis	14
-sister	506
+sister	508
 sisterinlaw	8
 sisterly	8
 sisterno	2
@@ -18510,7 +18510,7 @@ sistina	2
 sit	112
 site	32
 sits	4
-sitting	146
+sitting	147
 sittingroom	6
 situated	58
 situation	144
@@ -19255,7 +19255,7 @@ starfish	2
 staring	16
 starlight	2
 stars	34
-start	156
+start	157
 started	218
 starter	2
 startin	2
@@ -20219,7 +20219,7 @@ termed	10
 terminate	6
 terminated	6
 termination	16
-terms	266
+terms	267
 terpret	2
 terra	6
 terrace	10
@@ -20284,7 +20284,7 @@ thatlisten	2
 thatll	10
 thatonly	2
 thats	446
-the	79646
+the	79654
 theater	6
 theateractor	2
 theatre	58
@@ -20420,7 +20420,7 @@ thirtysix	12
 thirtysixth	2
 thirtythree	2
 thirtytwo	6
-this	6856
+this	6859
 thisall	2
 thisbe	2
 thish	2
@@ -20451,7 +20451,7 @@ thorwaldsen	2
 those	868
 thou	50
 though	946
-thought	1126
+thought	1127
 thoughtful	36
 thoughtfully	22
 thoughtfulness	4
@@ -20617,7 +20617,7 @@ tiptoeing	4
 tiptoes	2
 tiptop	2
 tire	14
-tired	100
+tired	101
 tires	2
 tiresome	12
 tiresomeness	2
@@ -20629,14 +20629,14 @@ titanic	2
 titans	4
 tithes	2
 titians	2
-title	96
+title	97
 titles	16
 tittattoe	2
 tittered	2
 titus	2
 tivoli	4
 tll	2
-to	41734
+to	41736
 toad	2
 toast	6
 tobacco	30
@@ -21129,7 +21129,7 @@ twentysix	4
 twentythree	6
 twentytwo	4
 twere	2
-twice	132
+twice	133
 twig	2
 twilight	14
 twill	2
@@ -21271,7 +21271,7 @@ undeceive	10
 undeceived	2
 undecided	4
 undeniably	2
-under	722
+under	723
 underclerk	2
 underclothes	2
 undergo	4
@@ -21574,7 +21574,7 @@ upards	2
 upbound	4
 upbraided	2
 upbraiding	2
-updated	16
+updated	17
 upended	2
 upharsin	4
 upheld	2
@@ -21613,7 +21613,7 @@ urges	2
 urging	4
 us	1706
 usages	4
-use	444
+use	446
 used	290
 usedand	2
 useful	50
@@ -21794,7 +21794,7 @@ version	8
 vert	2
 vertebra	6
 vertigo	4
-very	2840
+very	2841
 vespasian	2
 vessel	178
 vesselcertainly	2
@@ -22107,7 +22107,7 @@ wars	8
 warthat	2
 warwhoop	2
 warwick	2
-was	18106
+was	18108
 waseful	2
 wash	24
 washave	2
@@ -22318,13 +22318,13 @@ whalebone	2
 whar	6
 whard	2
 wharfboat	2
-what	5484
+what	5485
 whatever	190
 whatll	2
 whatr	2
 whats	110
 whatshisname	4
-whatsoever	18
+whatsoever	19
 whatsomething	2
 whatwhatthe	2
 whatyoumaycallher	2
@@ -22556,7 +22556,7 @@ witchcraft	2
 witched	4
 witches	30
 witchthings	2
-with	11734
+with	11736
 withdraw	14
 withdrawal	6
 withdrawing	10
@@ -22570,7 +22570,7 @@ withhell	2
 withhold	6
 within	270
 withina	2
-without	1536
+without	1537
 withoutmaybe	2
 withstood	4
 witness	98
@@ -22606,7 +22606,7 @@ wondered	30
 wonderful	64
 wonderfully	8
 wondering	34
-wonderland	16
+wonderland	20
 wonders	14
 wonderstruck	2
 wondrous	2
@@ -22758,7 +22758,7 @@ wusshup	2
 wust	2
 wuth	4
 wuz	68
-www	48
+www	49
 wy	2
 x	12
 xenophon	2
@@ -22874,7 +22874,7 @@ yonderway	2
 york	2
 yosef	2
 yoself	2
-you	22910
+you	22911
 youa	2
 youagainst	2
 youah	2

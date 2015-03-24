@@ -1,4 +1,5 @@
-
+import runningMedianCalculator
+from runningMedianCalculator import MedianCalculator
 
 __author__ = 'Ahmed Assal'
 
@@ -20,7 +21,7 @@ def runningMedianManager():
     start = time.clock()
     files = dataLoaderV3(inputPath, textPool)
     #print(files)
-    results = schedulerV3(textPool)
+    results = [MedianCalculator(x, textPool[x]) for x in range(len(textPool))]
 
     finalResults = MediansCombiner(results)
     # print(finalResults)
