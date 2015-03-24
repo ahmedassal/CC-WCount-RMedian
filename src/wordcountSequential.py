@@ -6,7 +6,7 @@ __author__ = 'Ahmed Assal'
 ################################################
 
 from scaledWordcount import dataLoaderV3
-from combiners import SimpleCombiner
+from combiners import WordcountsCombiner
 from tokenizers import TokenizerV3
 from writers import wcWriter
 import time
@@ -33,7 +33,7 @@ def wordCountManager():
     start = time.clock()
 
     # Data Loading Stage
-    # loading the input text files, ordered alphabetically,  into the buffer textPool organized as chunks,
+    # loading the input text files into the buffer textPool organized as chunks,
     # one for every text file textPool.txtFile.Line
     files = dataLoaderV3(inputPath, textPool)
 
@@ -46,7 +46,7 @@ def wordCountManager():
     # Results Consolidation Stage
     # combining the dictionaries, i.e. the intermediate results of the past stage into one master dictionary
     # the final result - a dictionary of all wordcounts for all input text files
-    finalResults = SimpleCombiner(intermediateResults)
+    finalResults = WordcountsCombiner(intermediateResults)
 
     # Results Preparation Stage
     # sorting the word alphabetically in preparation for writing them to text or html file
@@ -57,7 +57,8 @@ def wordCountManager():
     wcWriter(outputPath, sortedByWord, finalResults, "seq_", write_in_html= writeInHTML)
 
     end =  time.clock()
-    print("(Manager)Time elapsed: " + str((end-start)) + ". Sequentially generated " + str(len(finalResults)) + " tokens from " + str(len(intermediateResults)) + " files")
+    print("(Manager)Time elapsed: " + str((end-start)) + ". Sequentially generated " + str(len(finalResults)) +
+          " tokens from " + str(len(intermediateResults)) + " files")
 
 # invoking the sequential calculations for the wordcounts
 wordCountManager()

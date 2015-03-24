@@ -33,7 +33,7 @@ def runningMedianManager():
     start = time.clock()
 
     # Data Loading Stage
-    # loading the input text files, ordered alphabetically,  into the buffer textPool organized as chunks,
+    # loading the input text files, ordered alphabetically, into the buffer textPool organized as chunks,
     # one for every text file textPool.txtFile.Line
     files = dataLoaderV3(inputPath, textPool)
 

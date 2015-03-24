@@ -1,20 +1,24 @@
 __author__ = 'Ahmed Assal'
 
+################################################
+# Calculating the wordcounts sequentially
+#
+################################################
 import datetime
 
-def wcWriter(output_path, sortedWords, wordcount, algType, write_in_html = False,  file_no=0):
-    if write_in_html == True:
-        wcWriteHTML(output_path, sortedWords, wordcount, algType, file_no)
+def wcWriter(output_path, sortedWords, wordcount, algType, write_in_html = False):
+    if write_in_html:
+        wcWriteHTML(output_path, sortedWords, wordcount, algType)
     else:
-        wcWriteTXT(output_path, sortedWords, wordcount, algType, file_no)
+        wcWriteTXT(output_path, sortedWords, wordcount, algType)
 
-def medWriter(output_path, medians, algType, write_in_html = False, file_no=0):
-    if write_in_html == True:
-        medWriteHTML(output_path,medians, algType, file_no)
+def medWriter(output_path, medians, algType, write_in_html = False):
+    if write_in_html:
+        medWriteHTML(output_path,medians, algType)
     else:
-        medWriteTXT(output_path,medians, algType, file_no)
+        medWriteTXT(output_path,medians, algType)
 
-def wcWriteTXT(output_path, sortedWords, wordcount, algType, file_no=0):
+def wcWriteTXT(output_path, sortedWords, wordcount, algType):
     wc_output_file = open(output_path + algType +"wc_result.txt", "w")
     wc_output_file.write(str("Created on " + str(datetime.datetime.today())+ "\n"))
     wc_output_file.write("Number of words: " + str(len(sortedWords))+ "\n")
@@ -24,7 +28,7 @@ def wcWriteTXT(output_path, sortedWords, wordcount, algType, file_no=0):
     wc_output_file.close()
 
 
-def wcWriteHTML(output_path, sortedWords, wordcount, algType, partial=False, file_no=0):
+def wcWriteHTML(output_path, sortedWords, wordcount, algType):
     wc_output_file = open(output_path + algType +"wc_result.html", "w")
     wc_output_file.write("<html><head><title>wordcountSequential.py output</title></head><body><table>")
     for word in sortedWords:
@@ -34,7 +38,7 @@ def wcWriteHTML(output_path, sortedWords, wordcount, algType, partial=False, fil
 
 
 
-def medWriteTXT(output_path, medians, algType, partial=False, file_no=0):
+def medWriteTXT(output_path, medians, algType):
     median_output_file = open(output_path + algType +"med_result.txt", "w")
     median_output_file.write(str("Created on " + str(datetime.datetime.today())+ "\n"))
     median_output_file.write("Number of lines: " +  str(len(medians))+ "\n")
@@ -42,7 +46,7 @@ def medWriteTXT(output_path, medians, algType, partial=False, file_no=0):
         median_output_file.write(str(median) +"\n")
     median_output_file.close()
 
-def medWriteHTML(output_path, medians, algType, partial=False, file_no=0):
+def medWriteHTML(output_path, medians, algType):
     median_output_file = open(output_path + algType +"med_result.html", "w")
     median_output_file.write("<html><head><title>running median output</title></head><body><table>")
     for median in medians:

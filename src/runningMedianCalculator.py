@@ -11,7 +11,7 @@ token_pattern = re.compile(r'([a-zA-Z]+[\d\'-]?[a-zA-Z]*)')
 
 
 
-def MedianCalculator(fileNum, text):
+def MedianCalculator(text):
     """thread worker function"""
     start = time.clock()
     medianNumbers= []
@@ -22,8 +22,8 @@ def MedianCalculator(fileNum, text):
         words = re.findall(token_pattern, cleaned_line)
         lineWordCount = len(words)
         linesWordCount.add(lineWordCount)
-        index = int((lineNO)/2)
-        if (lineNO)%2 == 0:
+        index = int(lineNO/2)
+        if lineNO%2 == 0:
             medianNumbers.append(float(linesWordCount[index]))
         else:
             medianNumbers.append(float((linesWordCount[index] + linesWordCount[index+1])/2))

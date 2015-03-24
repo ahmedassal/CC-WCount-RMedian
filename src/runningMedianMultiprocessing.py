@@ -1,5 +1,3 @@
-
-
 __author__ = 'Ahmed Assal'
 
 from scaledRunningMedian import schedulerV3, dataLoaderV3

@@ -17,7 +17,7 @@ def TokenizerV1(file_num, text):
             wordcount[word] = 1
     return wordcount
 
-def TokenizerV2(file_num, text):
+def TokenizerV2(text):
     """thread worker function"""
     cleaned_text = re.sub(sub_pattern,"",text)
     words = re.findall(token_pattern, cleaned_text.lower())
