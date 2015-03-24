@@ -5,7 +5,7 @@ import os
 import multiprocessing as mp
 
 import tokenizers as toks
-from runningMedianCalculator import MedianCalculator
+import runningMedianCalculator as medCalc
 
 
 def schedulerV2(path, *files):
@@ -19,8 +19,8 @@ def schedulerV2(path, *files):
 
 def schedulerV3(text):
         textPoolLength = len(text)
-        pool = mp.Pool(processes = textPoolLength)
-        results = [pool.apply_async(MedianCalculator, args=(x, text[x])) for x in range(textPoolLength)]
+        pool = mp.Pool(processes = None)
+        results = [pool.apply_async(medCalc.MedianCalculator, args=(x, text[x])) for x in range(textPoolLength)]
         output = [p.get() for p in results]
         # print(output)
         pool.close()

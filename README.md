@@ -21,9 +21,9 @@ For this reason, it’s important to ensure that your solution works well for sm
 
 
 ###Results
-####Development IDE
+####IDE    
 JetBrains' PyCharm 4.0.5
-####Computing Platform
+####Computing Platform    
 The implementation was tested on Intel® Core™2 Duo CPU E7500 @ 2.93GHz (Dual Core), 4 GB RAM, Intel G41 Built Display Card, Ubuntu 14.04 LTS 64-bit.
 ####Test Data 
 ####Perfromance

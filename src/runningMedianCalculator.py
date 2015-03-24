@@ -1,8 +1,10 @@
 __author__ = 'Ahmed Assal'
 
-import re
-from sortedcontainers import SortedList
+
+import re, sys
+sys.path.extend(['/home/administrator/PycharmProjects/CC-WCount-RMedian'])
 import time
+from sortedcontainers.sortedlist import SortedList
 
 sub_pattern = re.compile(r"['\d-]?")
 token_pattern = re.compile(r'([a-zA-Z]+[\d\'-]?[a-zA-Z]*)')
@@ -11,7 +13,7 @@ token_pattern = re.compile(r'([a-zA-Z]+[\d\'-]?[a-zA-Z]*)')
 
 def MedianCalculator(fileNum, text):
     """thread worker function"""
-    start =  time.clock()
+    start = time.clock()
     medianNumbers= []
     linesWordCount = SortedList()
     lineNO = 0
@@ -30,7 +32,7 @@ def MedianCalculator(fileNum, text):
         # print("Size: " + str(len(linesWordCount)) + " linesWordCount elm: " + str(linesWordCount) )
         # print("Median NOs: " + str(medianNumbers))
     end =  time.clock()
-    print("(Calculator)Time elapsed: ", (end-start), "Using Multiprocessing, Generated ", len(medianNumbers) , " medians from " , lineNO, " Lines")#, len(text) , " files")
+    # print("(Calculator)Time elapsed: ", (end-start), "Using Multiprocessing, Generated ", len(medianNumbers) , " medians from " , lineNO, " Lines")#, len(text) , " files")
 
     # medianNumbers = [count[i]+count[i-1]/2 if i%2!= 0 else for count in lineWordCount, for i in (range(len(lineWordCount))]
     return medianNumbers

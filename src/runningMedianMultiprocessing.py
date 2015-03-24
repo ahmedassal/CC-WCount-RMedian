@@ -2,21 +2,22 @@
 
 __author__ = 'Ahmed Assal'
 
-from scaled import dataLoaderV2, schedulerV2, schedulerV3, dataLoaderV3
-from combiners import SimpleCombiner, MediansCombiner
+from scaledRunningMedian import schedulerV3, dataLoaderV3
+from combiners import MediansCombiner
 from writers import medWriter
-
 import time
 
 
-inputPath = "../wc_input/"
-outputPath = "../wc_output/"
-src_path = "../src/"
+workingPath = "../"  # ""
+inputPath = workingPath + "wc_input/"
+outputPath = workingPath + "wc_output/"
+src_path = workingPath + "src/"
 write_in_html =False
 textPool = []
 results=[]
+msg =""
 
-def runningMedianManager():
+def runningMedianManager(): #(inputPath, outputPath, src_path, write_in_html=False):
     start = time.clock()
     files = dataLoaderV3(inputPath, textPool)
     #print(files)
@@ -26,11 +27,11 @@ def runningMedianManager():
     # print(finalResults)
     medWriter(outputPath, finalResults, write_in_html= write_in_html, partial=False)
     end =  time.clock()
-    print("(Manager)Time elapsed: ", (end-start) , "Using Multiprocessing, Generated ", len(finalResults), " medians from ", len(results), " files")
+    print("(Manager)Time elapsed: ", (end-start) , ". Using Multiprocessing, generated ", len(finalResults), " medians from ", len(results), " files")
 
 
 
-runningMedianManager()
+runningMedianManager() #("../wc_input/", "../wc_output/", "../src/", False)
 
 
 
