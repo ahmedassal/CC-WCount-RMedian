@@ -11,5 +11,5 @@ The implementation was tested on Intel® Core™2 Duo CPU E7500 @ 2.93GHz (Dual 
 #####Wordcount    
 -The sequential implementation of my wordcount algorithm finished in about 3.15 seconds while the multiprocessing implementation finished in about 1.15 second.     
 -This enhancement in the performance of is a factor of 2.74    
- #####Running medians
+#####Running medians
  
