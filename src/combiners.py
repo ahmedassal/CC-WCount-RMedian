@@ -10,9 +10,18 @@ __author__ = 'Ahmed Assal'
 from collections import defaultdict
 from itertools import chain
 
-# Wordcount Reducer
-# merges the intermediate dictionaries that are packed inside the list, intermediates, into one master dictionary.
+
+
 def WordcountsCombiner(intermediates):
+    """
+    Wordcount Reducer
+    merges the intermediate dictionaries that are packed inside the list, intermediates, into one master dictionary.
+
+    :rtype :                list of dictionaries of the final results
+    :param intermediates:   list of lists of the
+    :return:
+    """
+
     # the use of the defaultdict data structures simplifies the summation of values (counts) of the intermediate
     # dictionaries. It only requires one statement, instead of 2, for creating a new ke, value pair or updating its values.
     result = defaultdict(int)
@@ -28,6 +37,11 @@ def WordcountsCombiner(intermediates):
 # The Running Medians Reducer
 # merges the intermediate lists that are packed inside the outer list, intermediates, into one master flat list.
 def MediansCombiner(intermediates):
+    """
+
+    :param intermediates:
+    :return:
+    """
     result = []
     for v in intermediates:
         result+=v
