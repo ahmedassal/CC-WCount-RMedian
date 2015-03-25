@@ -5,7 +5,7 @@ __author__ = 'Ahmed Assal'
 #
 ################################################
 
-from scaledWordcount import dataLoaderV3
+from scaledWordcount import seq_WcDataLoader
 from combiners import WordcountsCombiner
 from tokenizers import TokenizerV3
 from writers import wcWriter
@@ -35,7 +35,7 @@ def wordCountManager():
     # Data Loading Stage
     # loading the input text files into the buffer textPool organized as chunks,
     # one for every text file textPool.txtFile.Line
-    files = dataLoaderV3(inputPath, textPool)
+    files = seq_WcDataLoader(inputPath, textPool)
 
     # Data Processing Stage - calculating the wordcounts
     # iterating through the different text data for every input file while calculating the wordcounts

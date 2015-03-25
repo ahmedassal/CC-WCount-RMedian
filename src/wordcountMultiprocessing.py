@@ -5,7 +5,7 @@ __author__ = 'Ahmed Assal'
 #
 ################################################
 
-from scaledWordcount import dataLoaderV2, schedulerV2
+from scaledWordcount import mp_WcDataLoader, mp_WcScheduler
 from combiners import WordcountsCombiner
 from writers import wcWriter
 import time
@@ -34,14 +34,14 @@ def wordCountManager():
     # Data Loading Stage
     # reporting the paths of the different  input text files only. Actual loading is deferred to the next stage
     # the data is loading occurs in the tokenizers, which are invoked by the scheduler.
-    files = dataLoaderV2(inputPath)
+    files = mp_WcDataLoader(inputPath)
 
 
     # Data Processing Stage - calculating the wordcounts in parallel
     # the calculations are divided into jobs, each job involves a data loading stage from the assigned input file
     # while collecting the intermediate results inside a list of dictionaries
     # [{Dict 1 for Input Text File 1}, [{Dict 2 for Input Text File 2}, ....]
-    results = schedulerV2(inputPath, *files)
+    results = mp_WcScheduler(inputPath, *files)
 
     # Results Consolidation Stage
     # combining the dictionaries, i.e. the intermediate results of the past stage into one master dictionary

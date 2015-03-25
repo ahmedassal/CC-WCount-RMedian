@@ -18,8 +18,8 @@ def WordcountsCombiner(intermediates):
     merges the intermediate dictionaries that are packed inside the list, intermediates, into one master dictionary.
 
     :rtype :                list of dictionaries of the final results
-    :param intermediates:   list of lists of the
-    :return:
+    :param intermediates:   list of lists representing single occurrences of words for each input text file
+    :return:                the final results
     """
 
     # the use of the defaultdict data structures simplifies the summation of values (counts) of the intermediate
@@ -34,15 +34,19 @@ def WordcountsCombiner(intermediates):
         result[k] += v
     return result
 
-# The Running Medians Reducer
-# merges the intermediate lists that are packed inside the outer list, intermediates, into one master flat list.
 def MediansCombiner(intermediates):
     """
+    The Running Medians Reducer
+    merges the intermediate lists that are packed inside the outer list, intermediates, into one master flat list.
 
-    :param intermediates:
-    :return:
+    :rtype : object         master list of the final results
+    :param intermediates:   list of lists of the running medians of each input text file
+    :return:                the final results
     """
+    # master list of the final results
     result = []
+
+    # iterating over the sub lists for each input file to concatenate them into a master list
     for v in intermediates:
         result+=v
     return result

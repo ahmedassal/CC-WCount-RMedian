@@ -11,7 +11,7 @@ token_pattern = re.compile(r'([a-zA-Z]+[\d\'-]?[a-zA-Z]*)')
 
 
 
-def MedianCalculator(text):
+def MedianCalculator(fileNum, text):
     """thread worker function"""
     start = time.clock()
     medianNumbers= []
