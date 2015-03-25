@@ -28,7 +28,7 @@ For this reason, it’s important to ensure that your solution works well for sm
 
 ###Procedures
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------
 ###Results
 ####IDE    
 JetBrains' PyCharm 4.0.5.   
