@@ -22,6 +22,12 @@ We'd like you to implement your own version of this running median that calculat
 As a data engineer, it’s important that you write clean, well-documented code that scales for large amounts of data.     
 For this reason, it’s important to ensure that your solution works well for small and large text files, rather than just the simple examples above.         
 
+###Repository Content
+
+###Instructions
+
+###Procedures
+
 
 ###Results
 ####IDE    
