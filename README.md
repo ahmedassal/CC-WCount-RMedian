@@ -10,12 +10,13 @@ Another common problem is the Running Median - which keeps track of the median f
 We'd like you to implement your own version of this running median that calculates the median number of words per line, for each line of the text files in the wc_input directory. If there are multiple files in that directory, the files should be combined into a single stream and processed by your running median program in alphabetical order, so a file named hello.txt should be processed before a file named world.txt. The resulting running median for each line should then be outputted to a text file named med_result.txt in the wc_output directory.     
 
 ###Requirements
-####Sourcecode Repository
+####Github Repository
 * You may write your solution in any one of the following programming languages: C, C++, Clojure, Java, Python, Ruby, or Scala.
 * Submit a link to a Github repo with your source code.    
 * In addition to the source code, the top-most directory of your repo must include wc_input and wc_output directories, and a shell script named run.sh that compiles and runs the Word Count and Running Median programs. 
 * If your solution requires additional libraries or dependencies, the shell script should load them first so that your programs can be run on any system just by running run.sh. 
-* ![The figure is for the required structure of the top-most directory in your repo, or simply clone this repo.](https://github.com/InsightDataScience/cc-example/blob/master/images/directory-pic.png)
+![](https://github.com/InsightDataScience/cc-example/blob/master/images/directory-pic.png)
+* The above figure is for the required structure of the top-most directory in your repo, or simply clone this repo.
      
 ####Scalability
 As a data engineer, it’s important that you write clean, well-documented code that scales for large amounts of data.     
