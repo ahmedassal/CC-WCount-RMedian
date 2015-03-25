@@ -15,8 +15,8 @@ We'd like you to implement your own version of this running median that calculat
 * Submit a link to a Github repo with your source code.    
 * In addition to the source code, the top-most directory of your repo must include wc_input and wc_output directories, and a shell script named run.sh that compiles and runs the Word Count and Running Median programs. 
 * If your solution requires additional libraries or dependencies, the shell script should load them first so that your programs can be run on any system just by running run.sh. 
+* The figure below is for the required structure of the top-most directory in your repo, or simply clone this repo.   
 ![](https://github.com/InsightDataScience/cc-example/blob/master/images/directory-pic.png)
-* The above figure is for the required structure of the top-most directory in your repo, or simply clone this repo.
      
 ####Scalability
 As a data engineer, it’s important that you write clean, well-documented code that scales for large amounts of data.     
