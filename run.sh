@@ -24,7 +24,7 @@ pause "Then the multiprocessing implementation...[Press Enter]"
 echo -e "\n"
 python3.4 wordcountMultiprocessing.py
 echo -e "\n"
-pause "That's an improvement in the prefromance of a factor of nearly 3 ...[Press Enter]"
+pause "That's an improvement in the prefromance of a factor of nearly 1.9 ...[Press Enter]"
 echo -e "\nSecond problem - the running median\n"
 pause "Let's try the sequential implementation...[Press Enter]"
 echo -e "\n"
@@ -34,7 +34,7 @@ pause "Then the multiprocessing implementation...[Press Enter]"
 echo -e "\n"
 python3.4 runningMedianMultiprocessing.py
 echo -e "\n"
-pause "That's an improvement in the prefromance of a factor of nearly 17...[Press Enter to Exit]"
+pause "That's an improvement in the prefromance of a factor of nearly 11.5 ...[Press Enter to Exit]"
 
 cd ..
 cp wc_output/seq_wc_result.txt wc_output/wc_result.txt

@@ -58,7 +58,7 @@ def runningMedianManager():
     medWriter(outputPath, finalResults, "mp_", write_in_html= writeInHTML)
 
     end =  time.clock()
-    print("(Manager)Time elapsed: ", (end-start) , ". Using Multiprocessing, generated ", len(finalResults), " medians from ", len(results), " files")
+    print("(Manager)Time elapsed: ", (end-start) , ". Using Multiprocessing, generated ", len(finalResults), " medians from ", len(intermediateResults), " files")
 
 
 # invoking the parallel calculations for the running median

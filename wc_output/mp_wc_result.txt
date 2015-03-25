@@ -1,10 +1,9 @@
-Created on 2015-03-25 11:59:48.673704
-Number of words: 22944
+Created on 2015-03-25 19:45:37.739904
+Number of words: 22939
 a	30171
-aa	2
-aamen	4
+aamen	6
 aarons	2
-ab	4
+ab	6
 abandon	26
 abandoned	34
 abandoning	4
@@ -531,8 +530,7 @@ ajawing	2
 ajax	2
 ak	8
 akin	2
-al	2
-alab	2
+al	4
 alabaster	2
 alacrity	14
 aladdin	8
@@ -2254,7 +2252,7 @@ boasts	2
 boat	190
 boatman	4
 boats	32
-bob	18
+bob	16
 bobbing	6
 bobs	4
 bodes	2
@@ -2764,7 +2762,7 @@ buzz	8
 buzzard	2
 buzzing	6
 by	6610
-bye	8
+bye	6
 byi	2
 bymeby	4
 byron	4
@@ -5552,8 +5550,9 @@ dictation	2
 dictatorial	4
 dictionaries	2
 dictionary	20
-did	2538
+did	2536
 didand	2
+didi	2
 didier	2
 didn	28
 didnt	738
@@ -8547,12 +8546,12 @@ genlmen	4
 genoa	14
 genoese	24
 genteel	6
-gentle	58
+gentle	56
 gentleman	280
 gentlemanlike	16
 gentlemanly	12
 gentlemans	24
-gentlemen	266
+gentlemen	268
 gentlemens	10
 gentleness	14
 gentler	6
@@ -8759,10 +8758,10 @@ gonepositively	2
 goner	2
 gonewe	2
 gong	14
-good	1702
+good	1698
 goodall	2
 goodby	30
-goodbye	16
+goodbye	18
 goodday	10
 goodevening	16
 goodextended	2
@@ -8778,7 +8777,7 @@ goodmorning	14
 goodnature	2
 goodnatured	22
 goodnaturedly	4
-goodness	94
+goodness	96
 goodnessgracioussakes	2
 goodnight	16
 goodnow	2
@@ -9533,14 +9532,13 @@ heiresses	2
 heiressvalentine	2
 heirpresumptive	2
 heirs	16
-hel	4
 held	278
 helder	26
 helena	2
 heliotropes	6
 helish	2
-hell	80
-hello	18
+hell	82
+hello	22
 hellthat	2
 helm	26
 helmet	2
@@ -9897,7 +9895,7 @@ hounds	6
 hour	552
 hourly	2
 hours	310
-house	1404
+house	1402
 housebut	2
 housefull	2
 household	18
@@ -9912,6 +9910,7 @@ housemaids	2
 houseno	2
 houses	66
 housesnakes	2
+housethieves	2
 housetops	2
 hove	12
 hovel	2
@@ -10044,7 +10043,7 @@ hypocritically	2
 hypothesis	2
 hysterical	2
 hysterics	4
-i	28001
+i	27997
 iat	2
 icarus	2
 ice	14
@@ -10322,7 +10321,7 @@ imputations	2
 impute	4
 imputed	10
 imputing	4
-in	20793
+in	20791
 inability	6
 inaccessible	2
 inaccuracies	2
@@ -10776,7 +10775,7 @@ intentionally	4
 intentions	56
 intently	18
 intents	2
-inter	2
+inter	4
 intercede	2
 interceded	2
 interceding	2
@@ -10991,7 +10990,7 @@ issue	10
 issued	20
 issuing	8
 iswhere	2
-it	18017
+it	18015
 ita	2
 italian	150
 italians	14
@@ -11625,7 +11624,6 @@ leaky	2
 lean	16
 leaned	56
 leaning	94
-leans	2
 leant	2
 leanto	14
 leap	14
@@ -11940,7 +11938,7 @@ lizzy	188
 lizzyif	2
 lizzys	4
 ll	64
-lo	6
+lo	2
 load	16
 loaded	52
 loadened	2
@@ -12552,7 +12550,7 @@ mazzolata	2
 mazzolato	4
 mazzuola	4
 mdash	2
-me	8168
+me	8162
 mea	8
 meadows	2
 meagre	6
@@ -12632,11 +12630,11 @@ mehave	2
 mehe	2
 mehelp	2
 mehemet	2
-mei	14
+mei	16
 meif	2
 meillan	28
 meindeed	2
-meit	4
+meit	6
 melan	8
 melancholy	116
 melistenand	2
@@ -12658,7 +12656,7 @@ memories	18
 memory	128
 memotionless	2
 memphis	4
-men	676
+men	672
 menace	6
 menaces	2
 menacesi	2
@@ -12733,7 +12731,7 @@ messmate	2
 messmates	2
 messrs	12
 mesuch	2
-met	258
+met	260
 meta	6
 metal	2
 metallic	4
@@ -13517,7 +13515,6 @@ nervious	2
 nervous	74
 nervously	2
 nervousness	2
-ness	2
 nessus	4
 nest	10
 nestor	4
@@ -13551,8 +13548,7 @@ newer	2
 newest	4
 newly	14
 newlyborn	2
-newr	2
-newrleans	2
+newrleans	4
 news	188
 newsand	2
 newscapital	2
@@ -13705,7 +13701,7 @@ norway	2
 nose	52
 nosegays	4
 noses	6
-nosirree	2
+nosirreebob	2
 nostrils	20
 not	11226
 notable	2
@@ -13801,7 +13797,7 @@ nutrition	2
 nuts	8
 nymph	2
 nymphs	2
-o	152
+o	154
 oak	12
 oaken	10
 oakham	2
@@ -20003,7 +19999,7 @@ syrie	2
 syrup	16
 system	16
 systemthat	2
-t	22
+t	20
 ta	12
 table	390
 tableat	2
@@ -20211,7 +20207,6 @@ tents	2
 tenure	2
 tepelini	38
 tepeliniafter	2
-ter	2
 teresa	134
 teresas	4
 term	28
@@ -20270,7 +20265,7 @@ thanks	182
 thanksand	2
 thanksthanks	2
 thar	6
-that	16930
+that	16928
 thatair	12
 thatand	4
 thatby	2
@@ -20371,7 +20366,7 @@ thicket	26
 thickly	18
 thickness	2
 thief	14
-thieves	36
+thieves	34
 thieving	2
 thighs	4
 thimble	12
@@ -22837,7 +22832,7 @@ yellowish	4
 yells	4
 yelp	2
 yer	18
-yes	2270
+yes	2268
 yesbut	2
 yescertainly	2
 yesi	4
@@ -22846,7 +22841,7 @@ yesit	2
 yesm	12
 yesterday	202
 yesterdays	6
-yesthat	2
+yesthat	4
 yesthe	4
 yesthereisapostscript	2
 yestrue	2
