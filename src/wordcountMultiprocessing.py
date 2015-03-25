@@ -33,7 +33,7 @@ def wordCountManager():
     start= time.clock()
 
     # Data Loading Stage
-    # reporting the paths of the different  input text files only. Actual loading is deferred to the next stage
+    # reporting the paths of the different input text files only. Actual loading is deferred to the next stage
     # the data is loading occurs in the tokenizers, which are invoked by the scheduler.
     files = mp_WcDataLoader(inputPath)
 
