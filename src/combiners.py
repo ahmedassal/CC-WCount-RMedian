@@ -12,7 +12,7 @@ from itertools import chain
 
 
 
-def WordcountsCombiner(intermediates):
+def WcCombiner(intermediates):
     """
     Wordcount Reducer
     merges the intermediate dictionaries that are packed inside the list, intermediates, into one master dictionary.
@@ -34,7 +34,7 @@ def WordcountsCombiner(intermediates):
         result[k] += v
     return result
 
-def MediansCombiner(intermediates):
+def MedCombiner(intermediates):
     """
     The Running Medians Reducer
     merges the intermediate lists that are packed inside the outer list, intermediates, into one master flat list.

@@ -3,6 +3,7 @@ __author__ = 'Ahmed Assal'
 ################################################
 # Required module for the sequential and
 # parallel implementations of wordcount
+# calculations
 #
 ################################################
 
@@ -65,13 +66,15 @@ def seq_WcDataLoader(path, text):
 
 def mp_WcScheduler(path, *files):
     """
+    A basic scheduler for the wordcount implementation using Multiprocessing package.
+    It creates a pool of processes based on the number of cores available and then invokes these processes.
+    It then collects their outputs which are dictionaries of the words and their counts, and then pack these
+    dictionaries into a master list
 
-
-    :rtype :        list of list of text
+    :rtype :        list of dictionaries of words and their counts
     :param path:    the path of the input text files
     :param files:   list of input text file names
-    :return:        the master list of the text content of the input files. This is a list of lists where
-                    the innermost lists contain the text content for each input file.
+    :return:        list of dictionaries each containing the words and their counts in the input files.
     """
     # gets the number of input files
     filesLength = len(files)

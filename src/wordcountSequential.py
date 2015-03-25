@@ -6,7 +6,7 @@ __author__ = 'Ahmed Assal'
 ################################################
 
 from scaledWordcount import seq_WcDataLoader
-from combiners import WordcountsCombiner
+from combiners import WcCombiner
 from tokenizers import TokenizerV3
 from writers import wcWriter
 import time
@@ -15,7 +15,7 @@ import time
 workingPathPrefix = "../"  # ""
 inputPath = workingPathPrefix + "wc_input/"
 outputPath = workingPathPrefix + "wc_output/"
-src_path = workingPathPrefix + "src/"
+srcPath = workingPathPrefix + "src/"
 
 # optional flag to right the results as HTML file instead of TXT file
 writeInHTML =False
@@ -26,8 +26,14 @@ textPool = []
 # intermediate results variable used to pass it between the different stages
 intermediateResults=[]
 
-# sequential calculations pipeline for the wordcounts
 def wordCountManager():
+
+    """
+    sequential calculations pipeline for the wordcounts
+
+    :rtype : null
+    """
+
     # Start Profiling
     # basic profiling for the speed of the algorithm
     start = time.clock()
@@ -44,9 +50,9 @@ def wordCountManager():
     intermediateResults = [TokenizerV3(x, files, inputPath) for x in range(len(textPool))]
 
     # Results Consolidation Stage
-    # combining the dictionaries, i.e. the intermediate results of the past stage into one master dictionary
+    # combining the dictionaries, i.e. the intermediate results of the previous stage into one master dictionary
     # the final result - a dictionary of all wordcounts for all input text files
-    finalResults = WordcountsCombiner(intermediateResults)
+    finalResults = WcCombiner(intermediateResults)
 
     # Results Preparation Stage
     # sorting the word alphabetically in preparation for writing them to text or html file
