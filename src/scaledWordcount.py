@@ -6,16 +6,18 @@ import tokenizers as toks
 
 def mp_WcDataLoader(path):
     """
-    wordcount data loader for the sequential implementation. 
+    wordcount data loader for the sequential implementation.
     it returns the list of input files only. It does not load the actual data, which is done at a later stage at each
     of the worker functions.
-    
+
     :rtype :        list of strings
     :param path:    the path of the input text files
     :return:        list of input text file paths
     """
     files = os.listdir(path)
     return files
+
+
 
 def seq_WcDataLoader(path, text):
     """

@@ -1,7 +1,8 @@
 __author__ = 'Ahmed Assal'
 
 ################################################
-# Calculating the wordcounts in parallel
+# Calculating the wordcounts in parallel using
+# Multiprocessing package
 #
 ################################################
 
