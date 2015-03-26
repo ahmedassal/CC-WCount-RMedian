@@ -3,7 +3,7 @@
 function pause(){
     read -p "$*"
 }
-#$NUM = 100
+
 function explodeData(){
     for i in $(seq 1 100)
     do
@@ -18,9 +18,10 @@ for i in $(seq 1 100)
     done
 
 }
-#sudo pip install sortedcontainers
-#sudo pip install line_profiler
+
 #pip install -U pip
+#sudo pip install sortedcontainers
+#multiprocessing
 
 
 #wget -O 'wc_input/count_of_monte_cristo.txt' http://www.gutenberg.org/cache/epub/1184/pg1184.txt
