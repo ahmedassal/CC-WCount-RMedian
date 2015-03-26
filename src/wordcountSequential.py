@@ -7,7 +7,7 @@ __author__ = 'Ahmed Assal'
 
 from scaledWordcount import seq_WcDataLoader
 from combiners import WcCombiner
-from tokenizers import TokenizerV3
+from tokenizers import WcTokenizer
 from writers import wcWriter
 import time
 
@@ -43,14 +43,14 @@ def wordCountManager():
     # one for every text file textPool.txtFile.Line
     files = seq_WcDataLoader(inputPath, textPool)
 
-    # Data Processing Stage - calculating the wordcounts
+    # Data Processing Stage - calculating the wordcounts sequentially
     # iterating through the different text data for every input file while calculating the wordcounts
-    # for every chunk separately and the collecting the intermediate results inside a list of dictionaries
-    # [{Dict 1 for Input Text File 1}, [{Dict 2 for Input Text File 2}, ....]
-    intermediateResults = [TokenizerV3(x, files, inputPath) for x in range(len(textPool))]
+    # for every chunk separately and then collecting the intermediate results inside a master list of tuples lists
+    # [ [(word, 1), (word, 1), ....for Input Text File 1], [(word, 1), (word, 1), ....for Input Text File 1], ....]
+    intermediateResults = [WcTokenizer(x, files, inputPath) for x in range(len(textPool))]
 
     # Results Consolidation Stage
-    # combining the dictionaries, i.e. the intermediate results of the previous stage into one master dictionary
+    # combining the tuples list, i.e. the intermediate results of the previous stage into one master dictionary
     # the final result - a dictionary of all wordcounts for all input text files
     finalResults = WcCombiner(intermediateResults)
 

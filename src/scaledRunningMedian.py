@@ -105,7 +105,7 @@ def mp_MedScheduler(text):
     pool = mp.Pool(processes = None)
 
     # invokes the different worker processes, the Tokenizers and passes them the arguments
-    results = [pool.apply_async(medCalc.MedianCalculator, args=(x, text[x])) for x in range(textPoolLength)]
+    results = [pool.apply_async(medCalc.MedCalculator, args=(x, text[x])) for x in range(textPoolLength)]
 
     # collects the output of the worker processes, the lists, into a master list.
     output = [p.get() for p in results]

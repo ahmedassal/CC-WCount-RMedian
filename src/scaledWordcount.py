@@ -84,9 +84,9 @@ def mp_WcScheduler(path, *files):
     pool = mp.Pool(processes=None)
 
     # invokes the different worker processes, the Tokenizers and passes them the arguments
-    results = [pool.apply_async(toks.TokenizerV3, args=(x, files, path)) for x in range(filesLength)]
+    results = [pool.apply_async(toks.WcTokenizer, args=(x, files, path)) for x in range(filesLength)]
 
-    # collects the output of the worker processes, the dictionaries, into a master list.
+    # collects the output of the worker processes, the tuples list, into a master list.
     output = [p.get() for p in results]
 
     pool.close()

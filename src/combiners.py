@@ -17,13 +17,14 @@ def WcCombiner(intermediates):
     Wordcount Reducer
     merges the intermediate dictionaries that are packed inside the list, intermediates, into one master dictionary.
 
-    :rtype :                list of dictionaries of the final results
-    :param intermediates:   list of lists representing single occurrences of words for each input text file
+    :rtype :                master dictionary for the final results
+    :param intermediates:   list of tuples lists representing single occurrences of words for each input text file
     :return:                the final results
     """
 
     # the use of the defaultdict data structures simplifies the summation of values (counts) of the intermediate
-    # dictionaries. It only requires one statement, instead of 2, for creating a new ke, value pair or updating its values.
+    # dictionaries. It only requires one statement, instead of 2, for creating a new key, value pair or
+    # updating its values.
     result = defaultdict(int)
 
     # the following loop iterates over the first dictionary key and value pairs and then iterates over the next dictionary's

@@ -45,14 +45,14 @@ def wordCountManager():
 
     # Data Processing Stage - calculating the wordcounts in parallel
     # the calculations are divided into jobs, each job involves a data loading stage from the assigned input file
-    # while collecting the intermediate results inside a list of dictionaries
-    # [{Dict 1 for Input Text File 1}, [{Dict 2 for Input Text File 2}, ....]
-    results = mp_WcScheduler(inputPath, *files)
+    # while collecting the intermediate results inside a master list of tuples lists
+    # [[(word, 1), (word, 1), ....for Input Text File 1], [(word, 1), (word, 1), ....for Input Text File 1], ....]
+    intermediateResults = mp_WcScheduler(inputPath, *files)
 
     # Results Consolidation Stage
-    # combining the dictionaries, i.e. the intermediate results of the previous stage into one master dictionary
+    # combining the tuples lists, i.e. the intermediate results of the previous stage into one master dictionary
     # the final result - a dictionary of all wordcounts for all input text files
-    finalResults = WcCombiner(results)
+    finalResults = WcCombiner(intermediateResults)
 
     # Results Preparation Stage
     # sorting the word alphabetically in preparation for writing them to text or html file
@@ -64,7 +64,7 @@ def wordCountManager():
 
     end =  time.clock()
     print("(Manager)Time elapsed: " + str(end-start) + ". Using Multiprocessing, generated "+
-          str(len(finalResults)) + " tokens from " + str(len(results)) + " files")
+          str(len(finalResults)) + " tokens from " + str(len(intermediateResults)) + " files")
 
 
 

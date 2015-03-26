@@ -20,52 +20,84 @@ import time
 # sorted list data structure for the computation of the running median
 from sortedcontainers.sortedlist import SortedList
 
-# based on the assumptions, hyphens, digits or apostrophes appear mid-word are not assumed to be word
+# based on the assumptions, hyphens, underscores or apostrophes appear mid-word are not assumed to be word
 # boundaries, i.e., they can be deleted safely and the token can be captured as if they were not present.
 #
-# the regular expression pattern used for the deletion of digits, hyphens, and apostrophes.
-# subPattern = re.compile(r"['\d-]?")
+# Alternative 1
+# a table for the translation of every line, it is a fast conversion of uppercase to
+# lowercase and removal of the following `'-_
+table = str.maketrans(string.ascii_uppercase ,string.ascii_lowercase , "`'-_")
 
-# the regular expression pattern used for matching a token/word
-# word/token is any number of alphabetic symbols followed by an optional one or zero occurrence of
-# digit/hyphen/apostrophe and then an optional any number of alphabetic symbols.
-# token_pattern = re.compile(r'([a-zA-Z]+[\d\'-]?[a-zA-Z]*)')
-# tokenPattern = re.compile(r'([a-zA-Z]+[\d\'-]?[a-zA-Z]*)')
-# punctuationPattern = re.escape(r'[%s]' % re.escape(string.punctuation))
-# table = str.maketrans("","", string.punctuation.join("0123456789"))
-# table = str.maketrans(string.ascii_uppercase,string.ascii_lowercase, string.punctuation.join("0123456789"))
+# two other treatments of punctuation and digits
+#
+# Alternative 2
+# delete digit and punctuation except `'-_ hyphens, underscores or apostrophes
 # charsToDel = string.punctuation.translate(str.maketrans("", "", "`'-_"))+"0123456789"
 # table = str.maketrans(string.ascii_uppercase,string.ascii_lowercase, charsToDel)
-# tokenPattern = re.compile(r'([a-z]+)')
 
-table = str.maketrans(string.ascii_uppercase ,string.ascii_lowercase , "`'-_")
+# Alternative 3
+# delete all punctuation and digits
+# table = str.maketrans(string.ascii_uppercase,string.ascii_lowercase, string.punctuation.join("0123456789"))
+
+
+# the regular expression pattern used for matching a token/word
+# word/token is any number of alphabetic symbols
 tokenPattern = re.compile(r'([a-z]+)')
 
-def MedianCalculator(fileNum, text):
-    """thread worker function"""
-    start = time.clock()
+def MedCalculator(fileNum, text):
+    """
+    thread worker function
+    Calculates the running median for the lines present in the text list supplied.
+    Currently the sequential implementation is identical to the parallel implementation.
+
+    :rtype :        null
+    :param fileNum: an index pointing to the file to be processing in the input files
+    :param text:    a text buffer to be loaded with the input text
+    """
+
+    # Start Profiling
+    # basic profiling for the speed of the algorithm
+    # start = time.clock()
+
+    # the list that is going to hold the running medians
     medianNumbers= []
+
+    # a sorted list to hold the word counts for input lines
+    # the sorted list boosts performance substantially when computing the running median because this will not require
+    # resorting the wordcount list every time we add an entry to it.
     linesWordCount = SortedList()
     lineNO = 0
+
+
     for line in text:
-        # cleaned_line = re.sub(sub_pattern,"",line)
-        # cleaned_line = line.strip(string.punctuation)
+
+        # fast conversion of uppercase to lowercase and removal of the following `'-_
         cleaned_line = line.translate(table)
 
+        # matching words/tokens
         words = re.findall(tokenPattern, cleaned_line)
+
+        # counting wordcount of a line and adding it ot the respective list
         lineWordCount = len(words)
         linesWordCount.add(lineWordCount)
+
+        # running median calculations
+        # because I used a sorted list for the worcounts of lines, now it is straightforward to compute
+        # the running median
         index = int(lineNO/2)
         if lineNO%2 == 0:
             medianNumbers.append(float(linesWordCount[index]))
         else:
             medianNumbers.append(float((linesWordCount[index] + linesWordCount[index+1])/2))
         lineNO += 1
+
+        # optional profiling
         # print("Line NO: " + str(lineNO) + " wordcount: " + str(lineWordCount))
         # print("Size: " + str(len(linesWordCount)) + " linesWordCount elm: " + str(linesWordCount) )
         # print("Median NOs: " + str(medianNumbers))
-    end =  time.clock()
+        # end =  time.clock()
+
+    # optional profiling
     # print("(Calculator)Time elapsed: ", (end-start), "Using Multiprocessing, Generated ", len(medianNumbers) , " medians from " , lineNO, " Lines")#, len(text) , " files")
 
-    # medianNumbers = [count[i]+count[i-1]/2 if i%2!= 0 else for count in lineWordCount, for i in (range(len(lineWordCount))]
     return medianNumbers
