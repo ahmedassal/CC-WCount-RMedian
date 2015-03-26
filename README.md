@@ -27,33 +27,86 @@ For this reason, it’s important to ensure that your solution works well for sm
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 ##The Solution
 ###Repository Content
+####root
+#####Readme.md    
+This file. A detailed report on the implementation.
+#####Run.sh
+
 ####src/ directory 
 It contains the source code for the implementation as follows:
 
 #####wordcountSequential.py     
+computes the wordcounts sequentially.
 
 #####wordcountMultiprocessing.py    
+computes the wordcounts in parallel using Multiprocessing package.
 
 #####scaledRunningWordcount.py     
+encapsulates the code required for scaling the wordcount computations
 
 #####tokenizers.py      
+process the input text files to generate words/tokens that appear in any of the input files
 
-
-
-#####runningMedianSequential.py     
+#####runningMedianSequential.py
+computes the running medians sequentially.
 
 #####runningMedianMultiprocessing.py     
+computes the running medians in parallel using Multiprocessing package.
 
 #####scaledRunningMedian.py      
+encapsulates the code required for scaling the running medians computations
 
 #####runngingMedianCalculator.py     
-
+process the input text files to generate running medians for every line of the text input files
 
 #####combiners.py     
+Acts as a reducer. It combines the intermediate results of the different processes for the parallel implementation,
+and the results of the different iterations for the sequential implementation.
+  
+#####writers.py   
+* writes the results of the wordcounts computations to wc_result.txt/wc_result.html based on the value of the 
+WriteInHTML flag in addition to the other results files for the respective sequential and parallel implementations.
+* write the results of the running medians computations to med_result.txt/wc_result.html based on the 
+value of the WriteInHTML flag in addition to the other results files for the respective sequential and 
+parallel implementations.
 
-#####writers.py     
+####wc_input/ directory
+It contains the input text files for the different implementations.
+
+####wc_output/ directory
+The implementation generates the results for every problem/implementation in a separate result file and then copies 
+the results of the sequential implementation to the required naming convention imposed by the challenge organizers for 
+conformity. The results files are as follows:
+
+#####seq_wc_result.txt
+Wordcount results for the sequential implementation.
+
+#####mp_wc_result.txt
+Wordcount results for the Multiprocessing parallel implementation.
+
+#####wc_result.txt
+A copy of seq_wc_result, the wordcount results for the sequential implementation. It is included for conformity 
+with the instructions of the challenge.
+
+#####seq_med_result.txt
+The running median results for the sequential implementation.
+
+#####mp_med_result.txt
+The running median results for the Multiprocessing parallel implementation.
+
+#####med_result.txt
+A copy of seq_med_result, the running median results for the sequential implementation. It is included for conformity 
+with the instructions of the challenge.
 
 ###Instructions
+1- Please make sure that you have Python 3.4 installed, and preferably the pip system as well.
+2- Clone or download this code repository.
+3- If you have downloaded a zip file of the repo, please unpack it to a dir of your choice.
+4- cd to dir where you have unpacked the repo or cloned it to.
+5- Please run the run.sh file and follow up by hitting the enter key when required to run the different 
+implementations in sequence. You can check the basic profiling results of the different implementations to 
+get a sense of the performance.
+6- After completing the execution, you can check the results files in the wc_input dir.
 
 ###Procedures / word abut the implementation
 
