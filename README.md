@@ -30,7 +30,19 @@ For this reason, it’s important to ensure that your solution works well for sm
 ####root
 #####Readme.md    
 This file. A detailed report on the implementation.
+
 #####Run.sh
+1- Installs the required packages.
+2- Downloads some text files as test inputs for the implementations.
+3- Makes 100 copies of the file Pride and Prejudice.txt which is the largest in the test dataset, 700KB, for 
+expanding the size of the test data.
+4- Runs sequential implementation for wordcount.
+5- Runs parallel implementation, using Multiprocessing package,  for wordcount
+6- Runs sequentially the implementation for the running medians.
+7- Runs parallel implementation, using Multiprocessing package, for the running medians.
+8- Copies the sequential results of both wordcount and the running median, seq_wc_result.txt and seq_med_result, 
+into wc_result.txt and med_result.txt respectively. for conformity to the challenge instructions.
+9- Deletes the copies 100 of the file Pride and Prejudice.txt. 
 
 ####src/ directory 
 It contains the source code for the implementation as follows:
@@ -133,12 +145,12 @@ then deletes these copies when it finishes.
 #####Wordcount    
 * The sequential implementation of my wordcount algorithm finished in about 3.15 seconds.    
 * The multiprocessing implementation finished in about 1.15 second.     
-* This enhancement in the performance is a factor of 2.74.    
+* This enhancement in the performance is a factor of 1.5 - 3 depending on the data.    
        
 #####Running medians
 * The sequential implementation of my wordcount algorithm finished in about 6.15 seconds.    
 * The multiprocessing implementation finished in about 0.36 second.     
-* This enhancement in the performance is a factor of 17.  
+* This enhancement in the performance is a factor of 11-20.  
 
 ###Future Work
 Good examples of scalability of this classic problem exist. Their implementations are highly performing. 
