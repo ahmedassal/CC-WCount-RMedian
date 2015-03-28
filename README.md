@@ -2,6 +2,24 @@
 ##Scalable Wordcount and Running Median
 
 ###Executive Summary
+For the coding challenge introduced by Insight Data Engineering Fellows program, I have implemented a clean and 
+scalable code for the two problems of wordcount and running median computations using python 3.4. More specifically, 
+I have submitted two implementations for each of the two problems; a sequential and a parallel implementation using the 
+Multiprocessing package. Parallel implementations show performance gains over their sequential counterparts. How much 
+gain is achieved, depends heavily on the size of data and on the platform the code is tested on. Currently, I have done 
+some limited testing for these implementations on a dataset of an average size, 8 mb,  and on a computing platform of 
+limited multi-processing capabilities, 2 processing cores. Further testing is currently being conducted on larger 
+datasets and on a more capable computing platform.
+
+The included run.sh script executes the wordcount two implementations and then executes the running median two 
+implementations. The results are output to the respective X_wc_result.txt and X_med_result.txt files, where X is either 
+seq, for sequential implementations, or mp for parallel Multiprocessing implementations. The code also outputs the 
+results of the sequential implementations to wc_result.text and med_result.txt for compliance with the challenge 
+instructions. The code repository submitted adheres to the specific challenge requirements for the structure of the 
+code repository submitted.     
+  
+Finally, if time permits, I am currently coding a parallel implementation using MPI4Py to further demonstrate the 
+scalability of the code submitted.    
 
 ###The Challenge   
 ####Wordcount
@@ -120,7 +138,21 @@ implementations in sequence. You can check the basic profiling results of the di
 get a sense of the performance.
 6- After completing the execution, you can check the results files in the wc_input dir.
 
-###Procedures / word abut the implementation
+###Implementation Assumptions
+####Tokenizer
+####Running median input files
+
+
+###Implementation Highlights 
+####Wordcount
+translate
+tuples
+reducer and chain
+
+####Running median
+sortedlist
+reducer and chain
+limitation of the algorithm running medians between text files boundaries
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 ##Results
@@ -150,7 +182,7 @@ then deletes these copies when it finishes.
 #####Running medians
 * The sequential implementation of my wordcount algorithm finished in about 6.15 seconds.    
 * The multiprocessing implementation finished in about 0.36 second.     
-* This enhancement in the performance is a factor of 11-20.  
+* This enhancement in the performance is a factor of 11-20 depending on the data.
 
 ###Future Work
 Good examples of scalability of this classic problem exist. Their implementations are highly performing. 
