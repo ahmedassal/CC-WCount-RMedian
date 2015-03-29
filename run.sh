@@ -19,18 +19,15 @@ for i in $(seq 1 100)
 
 }
 
-#pip install -U pip
-#sudo pip install sortedcontainers
-#multiprocessing
+sudo pip install -U pip
+sudo pip install sortedcontainers
 
+wget -O 'wc_input/count_of_monte_cristo.txt' http://www.gutenberg.org/cache/epub/1184/pg1184.txt
+wget -O 'wc_input/pride_and_prejudice.txt' http://www.gutenberg.org/cache/epub/1342/pg1342.txt
+wget -O 'wc_input/adventures_of_huckleberry_finn.txt' http://www.gutenberg.org/cache/epub/76/pg76.txt
+wget -O 'wc_input/alice_in_wonderland.txt' http://www.gutenberg.org/cache/epub/11/pg11.txt
 
-#wget -O 'wc_input/count_of_monte_cristo.txt' http://www.gutenberg.org/cache/epub/1184/pg1184.txt
-#wget -O 'wc_input/pride_and_prejudice.txt' http://www.gutenberg.org/cache/epub/1342/pg1342.txt
-#wget -O 'wc_input/adventures_of_huckleberry_finn.txt' http://www.gutenberg.org/cache/epub/76/pg76.txt
-#wget -O 'wc_input/alice_in_wonderland.txt' http://www.gutenberg.org/cache/epub/11/pg11.txt
-
-
-#explodeData
+explodeData
 cd src/
 echo -en "\ec"
 echo -e "First problem - wordcount.\n"
@@ -55,4 +52,4 @@ cd ..
 cp wc_output/seq_wc_result.txt wc_output/wc_result.txt
 cp wc_output/seq_med_result.txt wc_output/med_result.txt
 
-#delExplodedData
+delExplodedData
