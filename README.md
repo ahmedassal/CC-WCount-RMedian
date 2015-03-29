@@ -140,6 +140,9 @@ get a sense of the performance.
 
 ###Implementation Assumptions
 ####Tokenizer
+In addition to the assumptions present in the FAQ, I assumed that all punctuations except `'-_ are to be left as is.
+They are treated as word boundaries. The set of the following characters `'-_ are simply deleted.
+
 ####Running median input files
 
 
@@ -150,8 +153,12 @@ tuples
 reducer and chain
 
 ####Running median
-sortedlist
-reducer and chain
+The use of sorted lists in the running median calculations has boosted the performance substantially. Also, the use of 
+the single iterator returned by chain(), from the itertools package, boosts the performance of the combiner which serves
+as a reducer to the tuples emitted by the median calculators. That is to say, when combining the intermediates result 
+of the running median for the different inout files, the use of a single iterator that iterates over all the 
+intermediates lists of results speeds up the consolidation process. 
+
 limitation of the algorithm running medians between text files boundaries
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
