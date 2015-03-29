@@ -129,19 +129,19 @@ A copy of seq_med_result, the running median results for the sequential implemen
 with the instructions of the challenge.
 
 ###Instructions
-1- Please make sure that you have Python 3.4 installed, and preferably the pip system as well.
-2- Clone or download this code repository.
-3- If you have downloaded a zip file of the repo, please unpack it to a dir of your choice.
-4- cd to dir where you have unpacked the repo or cloned it to.
+1- Please make sure that you have Python 3.4 installed, and preferably the pip system as well.   
+2- Clone or download this code repository.   
+3- If you have downloaded a zip file of the repo, please unpack it to a dir of your choice.   
+4- cd to dir where you have unpacked the repo or cloned it to.     
 5- Please run the run.sh file and follow up by hitting the enter key when required to run the different 
 implementations in sequence. You can check the basic profiling results of the different implementations to 
-get a sense of the performance.
-6- After completing the execution, you can check the results files in the wc_input dir.
+get a sense of the performance.     
+6- After completing the execution, you can check the results files in the wc_input dir.     
 
 ###Implementation Assumptions
 ####Tokenizer
-In addition to the assumptions present in the FAQ, I assumed that all punctuations except `'-_ are to be left as is.
-They are treated as word boundaries. The set of the following characters `'-_ are simply deleted.
+In addition to the assumptions present in the FAQ, I assumed that all punctuations except \`'-_ are to be left as is.
+They are treated as word boundaries. The set of the following characters \`'-_ are simply deleted.
 
 ####Running median input files
 
