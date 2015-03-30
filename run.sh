@@ -20,8 +20,8 @@ for i in $(seq 1 100)
 }
 
 sudo apt-get install python3.4
-sudo pip install -U pip
-sudo pip install sortedcontainers
+sudo python3.4 -m pip install -U pip
+sudo python3.4 -m pip install sortedcontainers
 
 wget -O 'wc_input/count_of_monte_cristo.txt' http://www.gutenberg.org/cache/epub/1184/pg1184.txt
 wget -O 'wc_input/pride_and_prejudice.txt' http://www.gutenberg.org/cache/epub/1342/pg1342.txt
