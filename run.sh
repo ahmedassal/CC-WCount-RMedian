@@ -19,6 +19,7 @@ for i in $(seq 1 100)
 
 }
 
+sudo apt-get install python3.4
 sudo pip install -U pip
 sudo pip install sortedcontainers
 
