@@ -45,7 +45,8 @@ def runningMedianManager():
     # iterating through the different text data for every input file while calculating the running median
     # for every chunk separately and the collecting the intermediate results inside a list of lists
     # [[List 1 for Input Text File 1], [List 2 for Input Text File 2], ....]
-    intermediateResults = [MedCalculator(x, textPool[x]) for x in range(len(textPool))]
+    # intermediateResults = [MedCalculator(x, textPool[x]) for x in range(len(textPool))]
+    intermediateResults = [MedCalculator(0, textPool)]
 
     # Results Consolidation Stage
     # combining the sub lists, i.e. the intermediate results of the previous stage into one master list

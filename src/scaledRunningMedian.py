@@ -41,10 +41,10 @@ def seq_MedDataLoader(path, text):
 
         # adds file lines to the list of the opened file
         for  line in f:
-            txtFile.append(line)
+            text.append(line)
 
         # appends the input file's list to the master text list
-        text.append(txtFile)
+        # text.append(txtFile)
         f.close()
     return files
 

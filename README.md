@@ -138,13 +138,14 @@ implementations in sequence. You can check the basic profiling results of the di
 get a sense of the performance.     
 6- After completing the execution, you can check the results files in the wc_input dir.     
 
-###Implementation Assumptions
+###Assumptions
 ####Tokenizer
 In addition to the assumptions present in the FAQ, I assumed that all punctuations except \`'-_ are to be left as is.
 They are treated as word boundaries. The set of the following characters \`'-_ are simply deleted.
 
 ####Running median input files
-
+In addition to the assumptions present in the FAQ, I assumed that all punctuations except \`'-_ are to be left as is.
+They are treated as word boundaries. The set of the following characters \`'-_ are simply deleted.
 
 ###Implementation Highlights 
 ####Wordcount
