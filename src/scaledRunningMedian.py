@@ -113,3 +113,33 @@ def mp_MedScheduler(text):
     pool.close()
     pool.join()
     return output
+
+def mp_MedScheduler2(text):
+    """
+    A basic scheduler for the running median implementation using Multiprocessing package.
+    It creates a pool of processes based on the number of cores available and then invokes these processes.
+    It then collects their outputs which are lists of the running median, and then pack these
+    lists into a master list
+
+    :rtype :        list of list of text
+    :param path:    the path of the input text files
+    :param files:   list of input text file names
+    :return:        the master list of the text content of the input files. This is a list of lists where
+                    the innermost lists contain the text content for each input file.
+    """
+    # gets the number of input files
+    textPoolLength = len(text)
+
+    # creates a pool of worker processes, leaves the determination of the num of processes to the multiprocessing
+    # package to decide depending on the number of processor cores, that is what the processes=None parameter for.
+    pool = mp.Pool(processes = None)
+
+    # invokes the different worker processes, the Tokenizers and passes them the arguments
+    results = [pool.apply_async(medCalc.mp_MedCalculator2, args=(x, text[x])) for x in range(textPoolLength)]
+
+    # collects the output of the worker processes, the lists, into a master list.
+    output = [p.get() for p in results]
+
+    pool.close()
+    pool.join()
+    return output

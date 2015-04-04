@@ -19,14 +19,14 @@ for i in $(seq 1 100)
 
 }
 
-sudo apt-get install python3.4
-sudo python3.4 -m pip install -U pip
-sudo python3.4 -m pip install sortedcontainers
+#sudo apt-get install python3.4
+#sudo python3.4 -m pip install -U pip
+#sudo python3.4 -m pip install sortedcontainers
 
-wget -O 'wc_input/count_of_monte_cristo.txt' http://www.gutenberg.org/cache/epub/1184/pg1184.txt
-wget -O 'wc_input/pride_and_prejudice.txt' http://www.gutenberg.org/cache/epub/1342/pg1342.txt
-wget -O 'wc_input/adventures_of_huckleberry_finn.txt' http://www.gutenberg.org/cache/epub/76/pg76.txt
-wget -O 'wc_input/alice_in_wonderland.txt' http://www.gutenberg.org/cache/epub/11/pg11.txt
+#wget -O 'wc_input/count_of_monte_cristo.txt' http://www.gutenberg.org/cache/epub/1184/pg1184.txt
+#wget -O 'wc_input/pride_and_prejudice.txt' http://www.gutenberg.org/cache/epub/1342/pg1342.txt
+#wget -O 'wc_input/adventures_of_huckleberry_finn.txt' http://www.gutenberg.org/cache/epub/76/pg76.txt
+#wget -O 'wc_input/alice_in_wonderland.txt' http://www.gutenberg.org/cache/epub/11/pg11.txt
 
 # uncomment if you have a capable machine to test the implementation on larger dataset
 #explodeData
@@ -48,6 +48,10 @@ echo -e "\n"
 pause "Then the multiprocessing implementation...[Press Enter]"
 echo -e "\n"
 python3.4 runningMedianMultiprocessing.py
+echo -e "\n"
+pause "Then the CORRECT multiprocessing implementation...[Press Enter]"
+echo -e "\n"
+python3.4 runningMedianMultiprocessing2.py
 echo -e "\n"
 
 cd ..
